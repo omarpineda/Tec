@@ -1,0 +1,41 @@
+<?php
+include '../funciones/mostrarFiguras.php';
+$pF = $_POST["filas"];
+$pC = $_POST["columnas"];
+$pTipo = $_POST["tipo"];
+$pPC= $_POST["pcolor"];
+$pSC= $_POST["scolor"];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resultado | While</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../csse/estilos.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+
+</head>
+<body>
+
+<legend>
+	<h2>Resultado del examen</h2>
+</legend>
+
+<div class="container-fluid">
+	<div class="container">
+	 <div class="table-responsive">
+		<?php 
+			mostrar($pF, $pC, $pTipo, $pPC, $pSC);
+		 ?>
+		 </div>
+	</div>
+</div>
+
+
+<div class="container">
+	<a href="index.php" title="Regresar" class="btn btn-primary pull-right btn-lg"><i class="fa fa-arrow-left" aria-hidden="true"></i>Regresar</a>
+</div>
+
+</body>
+</html>
