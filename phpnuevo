@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introduccion a PHP</title>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../../plugins/css/style.css">
+	<link rel="stylesheet" href="../../plugins/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../../plugins/sweetalert2-master/dist/sweetalert2.css">
+</head>
+<body>
+<!-- Inicio link especial flotante con parametros direccionados con JS -->
+	<a class='flotante atras' href='#' 
+		onclick="
+		mensaje
+		(
+		'../index.php',
+		'Menú php',
+		'Esta pagina conriene los ejercicios desarrollados en php'
+		);">
+		<i class="fa fa-chevron-left" aria-hidden="true"></i>
+	</a>
+<!-- Fin link especial flotante con parametros direccionados con JS -->
+	
+	<legend>
+		<h2>Intrducción a PHP 1| impresión en pantalla</h2>
+	</legend>
+	<div class="container">
+		<div class="container-fluid">
+			<p class="resultado">
+				<!-- etiqueta para poder escribir php dentro de html -->
+				<?php 
+					// impresion
+					echo "hola mundo";
+				?>
+			</p>
+		</div>
+	</div>
+	
+	<div class="container">
+		<a href="../index.php" title="Regresar al menú anterior" class="btn btn-primary pull-right btn-lg">Menú anterior</a>
+	</div>
+<!-- Llamar a las funciones de javascript -->
+	<script src="../../plugins/js/funciones.js"></script>
+	<script src="../../plugins/sweetalert2-master/dist/sweetalert2.js"></script>
+</body>
+</html>
